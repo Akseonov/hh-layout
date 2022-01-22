@@ -1,0 +1,44 @@
+.service-card {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+
+        @media @screen-gt-s {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image-container {
+        position: relative;
+        margin-right: 20px;
+
+        @media @screen-gt-s {
+            margin-right: 10px;
+        }
+
+        @media @screen-gt-m {
+            margin-right: 30px;
+        }
+    }
+
+    &__image {
+        max-width: 40px;
+
+        @media @screen-gt-m {
+            max-width: 50px;
+        }
+    }
+
+    &__text {
+        max-width: 210px;
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+
+        @media @screen-gt-s {
+            max-width: 160px;
+        }
+    }
+}
