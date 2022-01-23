@@ -26,6 +26,18 @@
     &__image {
         max-width: 40px;
 
+        @icons-service: support, return, delivery;
+
+        each(@icons-service, {
+            &_@{value} {
+                background-image: url('@{value}.svg');
+            }
+        })
+
+        &_support {
+            background-image: url('support.svg');
+        }
+
         @media @screen-gt-m {
             max-width: 50px;
         }
