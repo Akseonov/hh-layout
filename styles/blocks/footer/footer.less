@@ -6,30 +6,18 @@
         padding: 30px 0 22px 0;
     }
 
-    &__links {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    &__socials {
-        display: flex;
-        margin-bottom: 30px;
-    }
-
-    &__social {
-        margin-right: 15px;
-    }
-
-    &__social-icon {
-        width: 36px;
-        height: 36px;
-    }
-
     &__apps {
         display: flex;
         margin-bottom: 30px;
+        justify-content: start;
+
+        @media @screen-gt-s {
+            justify-content: end;
+        }
+
+        @media @screen-gt-m {
+            justify-content: end;
+        }
     }
 
     &__app {
